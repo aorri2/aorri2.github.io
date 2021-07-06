@@ -1,35 +1,29 @@
-# Catbook
-CATbook is a CATegory-centric Jekyll theme for bloggers. There is a switch button to toggle between dark mode and light mode. This theme is originally inspired from [Book](https://github.com/kkninjae/book).
+# Portfolio
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![GENERATOR](https://img.shields.io/badge/made_with-jekyll-blue.svg) ![VERSION](https://img.shields.io/badge/current_version-1.0-green.svg)
+A simple and modern portfolio template that is lightweight, mobile responsive and looks modern. 
 
-**Demo:** https://starry99.github.io/catbook/
+- [Demo](#demo)
+- [Screenshots](#screenshots)
+- [Features](#features)
+- [Installation](#installation)
 
-![SCREENSHOT](https://starry99.github.io/catbook/assets/img/lmode.jpg)
-![SCREENSHOT](https://starry99.github.io/catbook/assets/img/dmode.jpg)
+### Demo
+[abhn.io](https://abhn.io)
 
-## Setup
+### Screenshots
+![homepage](tmp/screenshot.jpg?raw=true "Homepage")
 
-```sh
-$ git clone https://github.com/starry99/catbook
-$ jekyll serve
+### Features
+- Single page portfolio made with vanilla CSS and jQuery
+- Sections: Landing, About, Skills (with neat bar graphs), Projects, Contact
+- Smooth scrolling
+- Fully mobile responsive, made with latest CSS3 grid and flexbox, polyfills included
+- Lightweight and easily customizable
 
-# Now you can start customization!
-```
+### Installation
+- Clone this repository and in the settings, set up Github pages in the setting and optionally a custom domain. The site is live now on `your-username.github.io/portfolio`.
+- In the config variables, add your details and if you use Google Analytics, add your Publisher ID in the `google_analytics` variable.
+- You can add/remove sections from the `_layouts/default.html` file, and then adding the corresponding html file in `_includes/` directory.
 
-## Make it yours
-
-If you want to create a new category, you need to create `*name*.html` in the `categories` folder. And add the following content:
-```html
----
-layout: page
-type: *name*
----
-
-{% include archive.html %}
-```
-Then the number of pages in the category will be displayed.
-
-## License
-
-[MIT License](https://opensource.org/licenses/MIT)
+### License
+GPL
